@@ -10,22 +10,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="form_box bg-primary border- 0 rounded flex-column p-3" >
+        <div class="form_box bg-primary border- 0 rounded flex-column p-3 container" >
             <h1 class="text-light text-center">Dojo Survey</h1>
-            <form action="#">
+            <form action="/collect" method="POST">
                 <label for="name" class="col-form-label-lg">Your Name: </label>
                 <input type="text" name="name" class="form-control">
                 <label for="location" class="col-form-label-lg">Dojo Location: </label>
                 <select name="location" id="location" class="custom-select">
-                    <option value="los_angeles">Los Angeles</option>
-                    <option value="honolulu">Honolulu</option>
-                    <option value="miami">Miami</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Honolulu">Honolulu</option>
+                    <option value="Miami">Miami</option>
                 </select>
                 <label for="language" class="col-form-label-lg">Favorite Language: </label>
                 <select name="language" id="language" class="custom-select">
-                    <option value="python">Python</option>
-                    <option value="java">Java</option>
-                    <option value="mern">MERN</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="MERN">MERN</option>
                 </select>
                 <label for="comments" class="col-form-label-lg">Comments (optional): </label>
                 <textarea name="comments" id="comments" cols="60" rows="5" class="form-control"></textarea>
